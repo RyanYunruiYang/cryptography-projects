@@ -26,7 +26,13 @@ def power(x, g, p):
 def decode(a, g, p):
     #We're solving g^x = a (mod p)
 
-    appeared = [0 for i in range(p)] #tracks if value has appeared
+    appeared = [i for i in range(p)] #tracks if value has appeared
+
+    random_attacks = [i for i in range(1,p)]
+
+    
+
+
 
     return 
 
