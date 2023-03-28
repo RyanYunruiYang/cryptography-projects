@@ -2,6 +2,7 @@ import sympy.ntheory as nt
 import math 
 
 
+#Same goal as https://www.dcode.fr/modular-exponentiation but different alg (probably)
 def power(x, g, p):
     dp = []
     cur_val = g
@@ -30,7 +31,7 @@ def decode(a, g, p):
 
     random_attacks = [i for i in range(1,p)]
 
-    
+
 
 
 
