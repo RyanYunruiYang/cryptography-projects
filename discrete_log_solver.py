@@ -1,6 +1,6 @@
 import sympy.ntheory as nt
 import math, random, time
-# from Crypto.Util.number import getPrime
+from Crypto.Util.number import getPrime
 
 #Same goal as https://www.dcode.fr/modular-exponentiation but different alg (probably)
 def power(x, g, p):
@@ -68,7 +68,11 @@ def benchmarking():
     #p,g,A = 1009,439,164
     # p,g,A = 15551, 7, 164
     # p,g,A = 5915587277, 2, 164  ###59348.6
-    p,g,A = 228034214138645326956319840591508314961, 3, 164 ###
+
+    p = 59615684179 # getPrime(36)
+    # print(p)
+    g = 3 # int(input())
+    A= 164
 
 
     sum_total = 0
